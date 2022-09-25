@@ -3,26 +3,47 @@ import React from "react";
 function Project() {
   const projects = [
     {
-      title: "Coding-Quiz",
-      technologies: "HTML/CSS/JS",
+      title: "Coding Quiz",
+      technologies: "HTML, CSS, Javascript",
       imageUrl: "../assets/Coding-Quiz.jpg",
       app: "https://ommarkhawaja1.github.io/Coding-Quiz/",
       github: "https://github.com/ommarkhawaja1/Coding-Quiz",
     },
     {
       title: "DevNet",
-      technologies: "",
+      technologies: "React, GraphQL, Node.js, Express.js, MongoDB, Mongoose ODM, JWT",
       imageUrl: "../assets/DevNet.jpg",
-      app: "",
+      app: "https://devnetsocial.herokuapp.com/",
       github: "https://github.com/grayad/DevNet",
     },
     {
-      title: "",
-      technologies: "",
-      imageUrl: "",
-      app: "",
-      github: "",
-    }
+      title: "Daily Task Schedule",
+      technologies: "HTML, CSS, Javascript",
+      imageUrl: "../assets/Daily-Task-Schedule.jpg",
+      app: "https://ommarkhawaja1.github.io/Daily-Schedule/",
+      github: "https://github.com/ommarkhawaja1/Daily-Schedule",
+    },
+    {
+      title: "Weather Dashboard",
+      technologies: "HTML, CSS, Javascript",
+      imageUrl: "../assets/Weather-Dashboard.jog",
+      app: "https://ommarkhawaja1.github.io/Weather-Dashboard/",
+      github: "https://github.com/ommarkhawaja1/Weather-Dashboard",
+    },
+    {
+      title: "Note Taker",
+      technologies: "HTML, CSS, Javascript",
+      imageUrl: "../assets/Daily-Task-Schedule.jpg",
+      app: "https://ommarkhawaja1.github.io/Daily-Schedule/",
+      github: "https://github.com/ommarkhawaja1/Daily-Schedule",
+    },
+    {
+      title: "Budget Tracker",
+      technologies: "Indexed DB, Service Worker, Manifest, Node, Express.js, Mongo DB",
+      imageUrl: "../assets/Budget-Tracker.jpg",
+      app: "https://floating-earth-11863.herokuapp.com/",
+      github: "https://github.com/ommarkhawaja1/Budget-Tracker",
+    },
 
   ];
   return (
