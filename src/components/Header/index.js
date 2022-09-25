@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <>
       <header className="d-flex align-items-center justify-content-between p-3">
-        <h1 aref="/">Alexus Gray</h1>
+        <h1 aref="/">Ommar khawaja</h1>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
       </header>
       <main>
