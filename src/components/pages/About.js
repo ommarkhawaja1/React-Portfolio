@@ -1,12 +1,11 @@
 import React from 'react';
-
+import headshot from '../../assets/IMG_9374.PNG.jpg'
 function About() {
     return (
       <div>
         <h2>About Me</h2>
         <div>
-            <img
-            src="/IMG_9374.PNG.jpg"
+            <img src={headshot}
             alt="Ommar Khawaja"
             className='img-thumbnail mx-1'
             width={200}
