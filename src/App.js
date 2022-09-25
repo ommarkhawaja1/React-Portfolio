@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import About from './components/pages/About';
-import ContactForm from './components/pages/Contact'
+import ContactForm from './components/ContactForm'
+import Contact from './components/pages/Contact'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         {!contactSelected ? (
           <>
             <About></About>
+            <Contact></Contact>
           </>
         ) : (
           <ContactForm></ContactForm>
