@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation';
-import './App.css';
 import About from './components/pages/About';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import ContactForm from './components/pages/Contact'
+
 
 function App() {
   const [categories] = useState([
@@ -18,19 +17,26 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
+  const [contactSelected, setContactSelected] = useState(false);
+
+
   return (
     <div>
       <Navigation
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Navigation>
       <main>
-        <div>
-          {/* <Header></Header> */}
-          <About></About>
-          {/* <Footer></Footer> */}
-        </div>
+        {!contactSelected ? (
+          <>
+            <About></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );
