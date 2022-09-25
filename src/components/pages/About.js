@@ -6,9 +6,9 @@ function About() {
         <h2>About Me</h2>
         <div>
             <img
-            src="./assets/IMG_9374.PNG.jpg"
+            src="/IMG_9374.PNG.jpg"
             alt="Ommar Khawaja"
-            class='img-thumbnail mx-1'
+            className='img-thumbnail mx-1'
             width={200}
             height={200}
             >

@@ -5,10 +5,25 @@ function Project() {
     {
       title: "Coding-Quiz",
       technologies: "HTML/CSS/JS",
-      imageUrl: "./assets/Timed-Quiz.jpg",
+      imageUrl: "../assets/Coding-Quiz.jpg",
       app: "https://ommarkhawaja1.github.io/Coding-Quiz/",
       github: "https://github.com/ommarkhawaja1/Coding-Quiz",
+    },
+    {
+      title: "DevNet",
+      technologies: "",
+      imageUrl: "../assets/DevNet.jpg",
+      app: "",
+      github: "https://github.com/grayad/DevNet",
+    },
+    {
+      title: "",
+      technologies: "",
+      imageUrl: "",
+      app: "",
+      github: "",
     }
+
   ];
   return (
     <section>
@@ -17,18 +32,18 @@ function Project() {
           <div className="card m-2" key={project.title}>
             <img
               src={project.imageUrl}
-              class="card-img"
+              className="card-img"
               alt="Application Screenshot"
             ></img>
-            <div class="card-body">
-              <h5 class="card-title">{project.title}</h5>
-              <p class="card-text">Built With: {project.technologies}</p>
+            <div className="card-body">
+              <h5 className="card-title">{project.title}</h5>
+              <p className="card-text">Built With: {project.technologies}</p>
             </div>
-            <div class="card-footer d-flex justify-content-center align-items-center">
-              <a href={project.app} class="btn">
+            <div className="card-footer d-flex justify-content-center align-items-center">
+              <a href={project.app} className="btn">
                 Application
               </a>
-              <a href={project.github} class="btn">
+              <a href={project.github} className="btn">
                 Github
               </a>
             </div>

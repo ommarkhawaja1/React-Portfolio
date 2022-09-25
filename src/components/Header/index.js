@@ -26,8 +26,10 @@ export default function Header() {
   return (
     <>
       <header className="d-flex align-items-center justify-content-between p-3">
+        <div className="container flex-row justify-space-between-lg justify-center align-center">
         <h1 aref="/">Ommar khawaja</h1>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
+      </div>
       </header>
       <main>
         <Page />
