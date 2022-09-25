@@ -1,49 +1,30 @@
-import React, { useEffect} from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from "react";
 
-function Navigation(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-  } = props;
+const determineActiveClass = (currentPage, pageName) =>
+  `nav-link ${currentPage === pageName ? "active" : ""}`;
 
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+const pageNames = ["About", "Portfolio", "Contact", "Resume"];
 
+function Nav({currentPage, handlePageChange}) {
   return (
-    <header className="flex-row px-1">
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about">
-              About me
-            </a>
-          </li>
-          <li className="mx-2">
-            <span>Contact</span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category)
-                }}
+    <nav>
+      <ul className="nav list-unstyled">
+        {pageNames.map((name) => {
+          return (
+            <li className="nav-item">
+              <a
+                className={determineActiveClass(currentPage, name)}
+                href={`#${name.toLowerCase()}`}
+                onClick={() => handlePageChange(name)}
               >
-                {capitalizeFirstLetter(category.name)}
-              </span>
+                {name}
+              </a>
             </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }
 
-export default Navigation;
+export default Nav;
